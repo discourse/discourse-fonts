@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module DiscourseFonts
-  VERSION = "0.0.3"
+  VERSION = "0.0.4"
 
   def self.path_for_fonts
     File.expand_path("../../vendor/assets/fonts", __FILE__)
@@ -12,6 +12,10 @@ module DiscourseFonts
       {
         name: "Helvetica",
         stack: "Helvetica, Arial, sans-serif",
+      },
+      {
+        name: "System",
+        stack: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
       },
       {
         name: "Open Sans",
