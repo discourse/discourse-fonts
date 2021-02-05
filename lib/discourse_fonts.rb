@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module DiscourseFonts
-  VERSION = "0.0.5"
+  VERSION = "0.0.6"
 
   def self.path_for_fonts
     File.expand_path("../../vendor/assets/fonts", __FILE__)
@@ -10,8 +10,8 @@ module DiscourseFonts
   def self.fonts
     @fonts ||= [
       {
-        name: "Helvetica",
-        stack: "Helvetica, Arial, sans-serif",
+        name: "Arial",
+        stack: "Arial, sans-serif",
       },
       {
         name: "System",
@@ -19,7 +19,7 @@ module DiscourseFonts
       },
       {
         name: "Open Sans",
-        stack: "Open Sans, Helvetica, Arial, sans-serif",
+        stack: "Open Sans, Arial, sans-serif",
         variants: [
           { filename: "OpenSans-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "OpenSans-Bold.ttf", format: "truetype", weight: 700 }
@@ -27,7 +27,7 @@ module DiscourseFonts
       },
       {
         name: "Oxanium",
-        stack: "Oxanium, Helvetica, Arial, sans-serif",
+        stack: "Oxanium, Arial, sans-serif",
         variants: [
           { filename: "oxanium-regular.woff2", format: "woff2", weight: 400 },
           { filename: "oxanium-bold.woff2", format: "woff2", weight: 700 }
@@ -35,7 +35,7 @@ module DiscourseFonts
       },
       {
         name: "Roboto",
-        stack: "Roboto, Helvetica, Arial, sans-serif",
+        stack: "Roboto, Arial, sans-serif",
         variants: [
           { filename: "Roboto-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "Roboto-Bold.ttf", format: "truetype", weight: 700 }
@@ -43,7 +43,7 @@ module DiscourseFonts
       },
       {
         name: "Lato",
-        stack: "Lato, Helvetica, Arial, sans-serif",
+        stack: "Lato, Arial, sans-serif",
         variants: [
           { filename: "Lato-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "Lato-Bold.ttf", format: "truetype", weight: 700 }
@@ -51,7 +51,7 @@ module DiscourseFonts
       },
       {
         name: "NotoSansJP",
-        stack: "NotoSansJP, Helvetica, Arial, sans-serif",
+        stack: "NotoSansJP, Arial, sans-serif",
         variants: [
           { filename: "NotoSansJP-Regular.otf", weight: 400 },
           { filename: "NotoSansJP-Bold.otf", weight: 700 }
@@ -59,7 +59,7 @@ module DiscourseFonts
       },
       {
         name: "Montserrat",
-        stack: "Montserrat, Helvetica, Arial, sans-serif",
+        stack: "Montserrat, Arial, sans-serif",
         variants: [
           { filename: "Montserrat-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "Montserrat-Bold.ttf", format: "truetype", weight: 700 }
@@ -67,7 +67,7 @@ module DiscourseFonts
       },
       {
         name: "RobotoCondensed",
-        stack: "RobotoCondensed, Helvetica, Arial, sans-serif",
+        stack: "RobotoCondensed, Arial, sans-serif",
         variants: [
           { filename: "RobotoCondensed-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "RobotoCondensed-Bold.ttf", format: "truetype", weight: 700 }
@@ -75,7 +75,7 @@ module DiscourseFonts
       },
       {
         name: "SourceSansPro",
-        stack: "SourceSansPro, Helvetica, Arial, sans-serif",
+        stack: "SourceSansPro, Arial, sans-serif",
         variants: [
           { filename: "SourceSansPro-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "SourceSansPro-Bold.ttf", format: "truetype", weight: 700 }
@@ -83,7 +83,7 @@ module DiscourseFonts
       },
       {
         name: "Oswald",
-        stack: "Oswald, Helvetica, Arial, sans-serif",
+        stack: "Oswald, Arial, sans-serif",
         variants: [
           { filename: "Oswald-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "Oswald-Bold.ttf", format: "truetype", weight: 700 }
@@ -91,7 +91,7 @@ module DiscourseFonts
       },
       {
         name: "Raleway",
-        stack: "Raleway, Helvetica, Arial, sans-serif",
+        stack: "Raleway, Arial, sans-serif",
         variants: [
           { filename: "Raleway-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "Raleway-Bold.ttf", format: "truetype", weight: 700 }
@@ -99,7 +99,7 @@ module DiscourseFonts
       },
       {
         name: "RobotoMono",
-        stack: "RobotoMono, Helvetica, Arial, sans-serif",
+        stack: "RobotoMono, Arial, sans-serif",
         variants: [
           { filename: "RobotoMono-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "RobotoMono-Bold.ttf", format: "truetype", weight: 700 }
@@ -107,7 +107,7 @@ module DiscourseFonts
       },
       {
         name: "Poppins",
-        stack: "Poppins, Helvetica, Arial, sans-serif",
+        stack: "Poppins, Arial, sans-serif",
         variants: [
           { filename: "Poppins-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "Poppins-Bold.ttf", format: "truetype", weight: 700 }
@@ -115,7 +115,7 @@ module DiscourseFonts
       },
       {
         name: "NotoSans",
-        stack: "NotoSans, Helvetica, Arial, sans-serif",
+        stack: "NotoSans, Arial, sans-serif",
         variants: [
           { filename: "NotoSans-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "NotoSans-Bold.ttf", format: "truetype", weight: 700 }
@@ -123,7 +123,7 @@ module DiscourseFonts
       },
       {
         name: "RobotoSlab",
-        stack: "RobotoSlab, Helvetica, Arial, sans-serif",
+        stack: "RobotoSlab, Arial, sans-serif",
         variants: [
           { filename: "RobotoSlab-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "RobotoSlab-Bold.ttf", format: "truetype", weight: 700 }
@@ -131,7 +131,7 @@ module DiscourseFonts
       },
       {
         name: "Merriweather",
-        stack: "Merriweather, Helvetica, Arial, sans-serif",
+        stack: "Merriweather, Arial, sans-serif",
         variants: [
           { filename: "Merriweather-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "Merriweather-Bold.ttf", format: "truetype", weight: 700 }
@@ -139,7 +139,7 @@ module DiscourseFonts
       },
       {
         name: "Ubuntu",
-        stack: "Ubuntu, Helvetica, Arial, sans-serif",
+        stack: "Ubuntu, Arial, sans-serif",
         variants: [
           { filename: "Ubuntu-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "Ubuntu-Bold.ttf", format: "truetype", weight: 700 }
@@ -147,7 +147,7 @@ module DiscourseFonts
       },
       {
         name: "PTSans",
-        stack: "PTSans, Helvetica, Arial, sans-serif",
+        stack: "PTSans, Arial, sans-serif",
         variants: [
           { filename: "PTSans-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "PTSans-Bold.ttf", format: "truetype", weight: 700 }
@@ -155,7 +155,7 @@ module DiscourseFonts
       },
       {
         name: "PlayfairDisplay",
-        stack: "PlayfairDisplay, Helvetica, Arial, sans-serif",
+        stack: "PlayfairDisplay, Arial, sans-serif",
         variants: [
           { filename: "PlayfairDisplay-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "PlayfairDisplay-Bold.ttf", format: "truetype", weight: 700 }
@@ -163,7 +163,7 @@ module DiscourseFonts
       },
       {
         name: "Nunito",
-        stack: "Nunito, Helvetica, Arial, sans-serif",
+        stack: "Nunito, Arial, sans-serif",
         variants: [
           { filename: "Nunito-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "Nunito-Bold.ttf", format: "truetype", weight: 700 }
@@ -171,7 +171,7 @@ module DiscourseFonts
       },
       {
         name: "Lora",
-        stack: "Lora, Helvetica, Arial, sans-serif",
+        stack: "Lora, Arial, sans-serif",
         variants: [
           { filename: "Lora-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "Lora-Bold.ttf", format: "truetype", weight: 700 }
@@ -179,7 +179,7 @@ module DiscourseFonts
       },
       {
         name: "Mukta",
-        stack: "Mukta, Helvetica, Arial, sans-serif",
+        stack: "Mukta, Arial, sans-serif",
         variants: [
           { filename: "Mukta-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "Mukta-Bold.ttf", format: "truetype", weight: 700 }
