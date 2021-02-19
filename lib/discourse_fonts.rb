@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module DiscourseFonts
-  VERSION = "0.0.6"
+  VERSION = "0.0.7"
 
   def self.path_for_fonts
     File.expand_path("../../vendor/assets/fonts", __FILE__)
@@ -184,6 +184,10 @@ module DiscourseFonts
           { filename: "Mukta-Regular.ttf", format: "truetype", weight: 400 },
           { filename: "Mukta-Bold.ttf", format: "truetype", weight: 700 }
         ]
+      },
+      {
+        name: "Helvetica",
+        stack: "Helvetica, Arial, sans-serif"
       }
     ].map do |font|
       font[:key] = font[:name].underscore.tr(" ", "_")
