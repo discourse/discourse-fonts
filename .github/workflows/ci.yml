@@ -12,7 +12,6 @@ on:
 jobs:
   publish:
     if: contains(github.ref, 'refs/tags/v')
-    needs: build
     runs-on: ubuntu-latest
 
     steps:
