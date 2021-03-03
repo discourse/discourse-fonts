@@ -1,4 +1,1 @@
-*.gem
-.bundle
-pkg
 Gemfile.lock
