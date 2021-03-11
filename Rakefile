@@ -1,6 +1,7 @@
 #!/usr/bin/env rake
 # frozen_string_literal: true
 require 'bundler'
+require "rake/testtask"
 
 begin
   Bundler.setup :default, :development
@@ -10,3 +11,5 @@ rescue Bundler::BundlerError => error
   $stderr.puts "Run `bundle install` to install missing gems"
   exit error.status_code
 end
+
+Rake::TestTask.new(:test)

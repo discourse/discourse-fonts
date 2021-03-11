@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "discourse_fonts"
@@ -12,4 +13,9 @@ Gem::Specification.new do |s|
   s.files       = Dir["lib/*.rb", "vendor/assets/fonts/*.ttf", "vendor/assets/fonts/*.woff", "vendor/assets/fonts/*.woff2", "vendor/assets/fonts/*.otf"]
   s.homepage    = "https://github.com/discourse/discourse-fonts"
   s.license     = "MIT"
+
+  s.required_ruby_version = ">= 2.5.0"
+
+  s.add_development_dependency "rake", "~> 13.0"
+  s.add_development_dependency "rubocop-discourse", "~> 2.4.1"
 end
