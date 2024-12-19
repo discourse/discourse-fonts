@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/discourse/discourse-fonts"
   s.license = "MIT"
 
-  s.required_ruby_version = ">= 3.3.0"
+  s.required_ruby_version = ">= 3.2.0"
 
   s.add_development_dependency "rake", "~> 13.0"
   s.add_development_dependency "rubocop-discourse", "~> 3.9"
