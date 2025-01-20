@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module DiscourseFonts
-  VERSION = "0.0.12"
+  VERSION = "0.0.13"
 
   def self.path_for_fonts
     File.expand_path("../../vendor/assets/fonts", __FILE__)
@@ -55,7 +55,11 @@ module DiscourseFonts
         {
           name: "Inter",
           stack: "Inter, Arial, sans-serif",
-          variants: [{ filename: "Inter.ttf", format: "truetype", weight: 400 }]
+          # Inter is variable font, so the same .ttf file is used for all weights.
+          variants: [
+            { filename: "Inter.ttf", format: "truetype", weight: 400 },
+            { filename: "Inter.ttf", format: "truetype", weight: 700 }
+          ]
         },
         {
           name: "NotoSansJP",
