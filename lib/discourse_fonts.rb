@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module DiscourseFonts
-  VERSION = "0.0.14"
+  VERSION = "0.0.15"
 
   def self.path_for_fonts
     File.expand_path("../../vendor/assets/fonts", __FILE__)
@@ -55,9 +55,15 @@ module DiscourseFonts
         {
           name: "Inter",
           stack: "Inter, Arial, sans-serif",
+          font_feature_settings: "'calt' 0, 'ccmp' 0, 'ss02' 1",
+          font_variation_settings: "'opsz' 28",
           # Inter is variable font, so the same file is used for all weights.
           variants: [
-            { filename: "InterVariable.woff2", format: "woff2", weight: "100 900" },
+            {
+              filename: "InterVariable.woff2",
+              format: "woff2",
+              weight: "100 900"
+            }
           ]
         },
         {
