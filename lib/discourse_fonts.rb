@@ -55,7 +55,7 @@ module DiscourseFonts
         {
           name: "Inter",
           stack: "Inter, Arial, sans-serif",
-          font_feature_settings: "'calt' 0, 'ccmp' 0, 'ss04' 1",
+          font_feature_settings: "'calt' 0, 'ccmp' 0",
           font_variation_settings: "'opsz' 28",
           # Inter is variable font, so the same file is used for all weights.
           variants: [
