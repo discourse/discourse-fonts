@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module DiscourseFonts
-  VERSION = "0.0.16"
+  VERSION = "0.0.17"
 
   def self.path_for_fonts
     File.expand_path("../../vendor/assets/fonts", __FILE__)
@@ -55,8 +55,9 @@ module DiscourseFonts
         {
           name: "Inter",
           stack: "Inter, Arial, sans-serif",
-          font_feature_settings: "'calt' 0, 'ccmp' 0",
-          font_variation_settings: "'opsz' 28",
+          font_feature_settings: "'calt' 0",
+          # calt is enabled by default, but we need to disable it so it does no conflict with markdown typographer which
+          # performs similar oprations.
           # Inter is variable font, so the same file is used for all weights.
           variants: [
             {
