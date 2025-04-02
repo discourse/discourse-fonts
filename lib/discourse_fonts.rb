@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module DiscourseFonts
-  VERSION = "0.0.18"
+  VERSION = "0.0.19"
 
   def self.path_for_fonts
     File.expand_path("../../vendor/assets/fonts", __FILE__)
@@ -11,10 +11,7 @@ module DiscourseFonts
     @fonts ||=
       [
         { name: "Arial", stack: "Arial, sans-serif" },
-        {
-          name: "System",
-          stack: "system-ui, Arial, sans-serif"
-        },
+        { name: "System", stack: "system-ui, Arial, sans-serif" },
         {
           name: "Open Sans",
           stack: "Open Sans, Arial, sans-serif",
@@ -254,7 +251,26 @@ module DiscourseFonts
             { filename: "Mukta-Bold.woff2", format: "woff2", weight: 700 }
           ]
         },
-        { name: "Helvetica", stack: "Helvetica, Arial, sans-serif" }
+        { name: "Helvetica", stack: "Helvetica, Arial, sans-serif" },
+        {
+          name: "JetBrains Mono",
+          stack: "JetBrains Mono, Consolas, Monaco, monospace",
+          monospace: true,
+          # ligatures can conflict with markdown typographer
+          font_variant_ligatures: "none",
+          variants: [
+            {
+              filename: "JetBrainsMono-Regular.woff2",
+              format: "woff2",
+              weight: 400
+            },
+            {
+              filename: "JetBrainsMono-Bold.woff2",
+              format: "woff2",
+              weight: 700
+            }
+          ]
+        }
       ].map do |font|
         font[:key] = font[:name].underscore.tr(" ", "_")
         font
